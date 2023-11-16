@@ -47,24 +47,24 @@
   /* Start Components */
   .special-heading {
     color: #ebeced;
-    font-size: 100px;
+    font-size: 70px;
     text-align: center;
     font-weight: 800;
     letter-spacing: -3px;
     margin: 0;
   }
   .special-heading + p {
-    margin: -30px 0 0;
+    margin: 20px 0 0;
     font-size: 20px;
     text-align: center;
     color: #797979;
   }
   @media (max-width: 767px) {
     .special-heading {
-      font-size: 60px;
+      font-size: 40px;
     }
     .special-heading + p {
-      margin-top: -20px;
+      margin-top: 20px;
     }
   }
   /* End Components */
@@ -224,12 +224,13 @@
   }
   .services .services-content .srv i {
     color: var(--main-color);
-    flex-basis: 60px;
+    flex-basis: 60px;  
+    
   }
   .services .services-content .srv .text {
     flex: 1;
   }
-  .services .services-content .srv .text h3 {
+  .services .services-content .srv .text h5 {
     margin: 0 0 20px;
   }
   .services .services-content .srv .text p {
@@ -243,12 +244,12 @@
   }
   .services .services-content .image::before {
     content: "";
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     width: 100px;
     height: calc(100% + 100px);
     top: -50px;
     position: absolute;
-    right: 0;
+    left: 0;
     z-index: -1;
   }
   .services .services-content .image img {
