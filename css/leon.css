@@ -241,10 +241,13 @@
   .services .services-content .image {
     text-align: center;
     position: relative;
+    
+
   }
   .services .services-content .image::before {
     content: "";
-    background-color: var(--main-color);
+    display: none;
+    background-color: var(--secondary-color);
     width: 100px;
     height: calc(100% + 100px);
     top: -50px;
@@ -281,15 +284,22 @@ background-color: white;
 }
 
 .portfolio .portfolio-content .card img{
-    max-width: 100%;
+  /* max-width: 100%; */
+  width: 350px;
+  height: 300px;
+  margin: 5px;
 }
 
 .portfolio .portfolio-content .card  .info{
     padding: 20px;
+    
+    
 }
 
 .portfolio .portfolio-content .card .info h3{
     margin: 0;
+    color: var(--main-color);
+    font-size: 20px;
 }
 
 .portfolio .portfolio-content .card .info p{
