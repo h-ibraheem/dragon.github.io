@@ -54,7 +54,7 @@
     margin: 0;
   }
   .special-heading + p {
-    margin: 20px 0 0;
+    margin: 2px 0 0;
     font-size: 20px;
     text-align: center;
     color: #797979;
@@ -406,13 +406,12 @@ background-color: white;
  /* start Contact */
  .contact{
     padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
     /* background-color: var(--section-background); */
     background-color: white;
  }
 
  .contact .info{
-    padding-top: var(--section-padding);
+    padding-top: 20px;
     padding-bottom: var(--section-padding);
     text-align: center;
  }
@@ -422,14 +421,7 @@ background-color: white;
     font-weight: 800;
     color: var(--secondary-color);
     letter-spacing: -2px;
-    margin-bottom: 15px;
- }
-
- .contact .info .link{
-    display: block;
-    font-size: 35px;
-    color: var(--main-color);
-    text-decoration: none;
+    margin-bottom: 40px;
  }
 
  .contact .info .social{
@@ -441,7 +433,7 @@ background-color: white;
 
  .contact .info .social i{
     margin-right: 15px;
-    color: var(--secondary-color);
+    color: var(--main-color);
     font-size: 28px;
  }
 @media(max-width:767px){
