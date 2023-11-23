@@ -378,7 +378,7 @@ header .logo{
 .portfolio{
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    background-color: var(--section-background);
 }
 
 .portfolio .portfolio-content{
