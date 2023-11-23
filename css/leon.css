@@ -67,6 +67,9 @@
       margin-top: 20px;
     }
   }
+ ul{
+  list-style: none;
+ }
   /* End Components */
 
   /* Start Header */
@@ -89,7 +92,9 @@ header .logo{
   header .container .logo img{
     height: 90px;
   }
-
+  header .logo img:hover {
+    height: 120px;
+  }
   header .container nav{
     display: flex;
     flex: 1;
@@ -106,10 +111,19 @@ header .logo{
     display: flex;
     list-style: none;
   }
+  
+  header ul li a:hover{
+    border-bottom: 1px solid var(--main-color);
+  }
+  header ul li:first-child{
+    font-weight: bold;
+  }
+
   header nav ul li a{
     text-decoration: none;
     font-size: 18px;
     padding: 20px 10px;
+    margin-bottom: 10px;
     color: var(--main-color);
     font-size: 20px;
   }
@@ -290,13 +304,81 @@ header .logo{
       display: none;
     }
   }
-  /* Start Services  */
+  /* End Services  */
+
+  /* Start Design */
+  .design{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+    height: 600px;
+    display: flex; 
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .design::before{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /50%);
+    position: absolute;
+    
+  }  
+  
+
+
+  .design .image{
+    text-align: center;
+  }
+  .design .image,
+  .design .text{
+    z-index: 2;
+    position: relative;
+    flex: 1;
+  }
+
+  .design .image img{
+    position: relative;
+    bottom: -150px;
+  }
+
+  .design .text{
+    padding: 40px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 0 50px 50px 0;
+  }
+
+  .design .text h2{
+    font-weight: normal;
+    margin-bottom: 50px;
+    font-size: 33px;
+  }
+
+  .design .text ul li{
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .design .text ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-left: 20px;
+  }
+  /* End Design */
 
 /* start Portfolio */
 .portfolio{
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--section-background);
+    
 }
 
 .portfolio .portfolio-content{
