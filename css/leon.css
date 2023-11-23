@@ -329,12 +329,10 @@ header .logo{
     position: absolute;
     
   }  
-  
-
-
   .design .image{
     text-align: center;
   }
+
   .design .image,
   .design .text{
     z-index: 2;
@@ -348,7 +346,7 @@ header .logo{
   }
 
   .design .text{
-    padding: 40px;
+    padding: 13px;
     color: white;
     background-color: var(--main-color);
     border-radius: 0 50px 50px 0;
@@ -356,14 +354,14 @@ header .logo{
 
   .design .text h2{
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 33px;
   }
 
   .design .text ul li{
     padding: 15px;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .design .text ul li::before{
@@ -372,13 +370,34 @@ header .logo{
     font-weight: 900;
     margin-left: 20px;
   }
+
+  @media (max-width:767px) {
+    
+    .design .text{
+      padding: 20px;
+      background-color: rgb(40 167 234 /50%);
+    }
+    .design .image {
+      display: none;
+    }
+
+    .design .text h2{
+      font-size: 25px;
+    }
+
+    .design .text ul li span{
+      display: none;
+    }
+  }
+
+
   /* End Design */
 
 /* start Portfolio */
 .portfolio{
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    background-color: var(--section-background);
 }
 
 .portfolio .portfolio-content{
