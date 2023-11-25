@@ -1,7 +1,7 @@
 
-# MrDragon Website Project from Sudan
+# MrDragon From Sudan Website
 
-Welcome to the MrDragon Website project from Sudan! This project is a simple website designed using HTML and CSS, with a focus on achieving a responsive design that works well on all devices.
+Welcome to the MrDragon from Sudan! Website project This project is a simple website designed using HTML and CSS, with a focus on achieving a responsive design that works well on all devices.
 
 ## Project Summary
 
