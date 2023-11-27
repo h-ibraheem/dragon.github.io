@@ -287,7 +287,6 @@ header .logo{
   }
   .services .services-content .image::before {
     content: "";
-    display: none;
     background-color: var(--secondary-color);
     width: 100px;
     height: calc(100% + 100px);
@@ -441,7 +440,7 @@ background-color: white;
 
 /* start About */
 .about{
-  display: none;
+  
     padding-top: var(--section-padding);
     padding-bottom: calc(var(--section-padding) + 60px);
 
