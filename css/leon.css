@@ -5,6 +5,7 @@
     --section-padding: 60px;
     --section-background: #f6f6f6;
     --main-duration: 0.5s;
+    --title-font:'Noto Nastaliq Urdu', serif;
   }
   /* End Variables */
   /* Start Global Rules */
@@ -17,7 +18,9 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+
   }
   .container {
     padding-left: 15px;
@@ -58,6 +61,12 @@
     font-size: 20px;
     text-align: center;
     color: #797979;
+  }
+
+  .special-heading + p > span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
   }
   @media (max-width: 767px) {
     .special-heading {
@@ -199,17 +208,20 @@ header .logo{
     top: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    width: 500px;
+    
     max-width: 100%;
   }
   .landing .intro-text h1 {
     margin: 0;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
     color: var(--main-color);
+    font-family: var(--title-font);
   }
   .landing .intro-text p {
-    font-size: 19px;
+    width: 500px;
+    margin-top: 100px;
+    font-size: 25px;
     line-height: 1.8;
     
   }
@@ -219,10 +231,13 @@ header .logo{
       font-size: 40px;
       color: var(--main-color);
       padding-bottom: 15px;
+      width: 400px;
     }
     .landing .intro-text p {
       font-size: 19px;
       line-height: 1.8;
+      width: 300px;
+      margin: 50px auto;
       
     }
   }
