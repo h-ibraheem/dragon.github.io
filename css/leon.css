@@ -86,11 +86,13 @@
   color: var(--main-color);
   font-size: 2rem;
   padding: 1.5rem!important;
-  margin: 0 0.3rem!important;
+  margin:  0 0.3rem!important;
   box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
   border-radius: 50%;
   transition: all 0.3s;
 }
+
+
 
   /* End Components */
 
@@ -454,7 +456,8 @@ background-color: white;
 .portfolio .portfolio-content .card .info h3{
     margin: 0;
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 27px;
+    text-align: center;
 }
 
 .portfolio .portfolio-content .card .info p{
@@ -462,6 +465,19 @@ background-color: white;
     line-height: 1.8;
     margin-bottom: 0;
 
+}
+
+.portfolio .portfolio-content .card .info .btn {
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 1.5rem!important;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 17px;
+  transition: all 0.3s;
+  display: flex;
+  width: fit-content;
+  margin: 50px auto 0;
+  
 }
 
 /* End Portfolio */
