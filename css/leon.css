@@ -46,7 +46,7 @@
   /* End Global Rules */
   /* Start Components */
   .special-heading {
-    color: #ebeced;
+    color: #aacff5;
     font-size: 70px;
     text-align: center;
     font-weight: 800;
@@ -73,6 +73,16 @@
  a{
   text-decoration: none;
  }
+ i {
+  color: var(--main-color);
+  font-size: 2rem;
+  padding: 1.5rem!important;
+  margin: 0 0.3rem!important;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
   /* End Components */
 
   /* Start Header */
@@ -232,9 +242,7 @@ header .logo{
     padding: 20px;
     text-align: center;
   }
-  .features .feat i {
-    color: var(--main-color);
-  }
+
   .features .feat h3 {
     font-weight: 800;
     margin: 30px 0;
@@ -266,11 +274,13 @@ header .logo{
       text-align: center;
     }
   }
-  .services .services-content .srv i {
-    color: var(--main-color);
-    flex-basis: 60px;  
+  .services .services-content .srv i{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+   }
     
-  }
   .services .services-content .srv .text {
     flex: 1;
   }
