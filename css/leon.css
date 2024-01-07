@@ -50,7 +50,7 @@
   /* Start Components */
   .special-heading {
     color: #aacff5;
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     font-weight: 800;
     letter-spacing: -3px;
@@ -58,7 +58,7 @@
   }
   .special-heading + p {
     margin: 2px 0 0;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     color: #797979;
   }
@@ -467,7 +467,7 @@ background-color: white;
 
 }
 
-.portfolio .portfolio-content .card .info .btn {
+.btn {
   color: var(--main-color);
   font-weight: bold;
   padding: 1.5rem!important;
@@ -484,17 +484,16 @@ background-color: white;
 
 /* start About */
 .about{
-  
     padding-top: var(--section-padding);
     padding-bottom: calc(var(--section-padding) + 60px);
-
 }
 
 .about .about-content{
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-     justify-content: space-between;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 @media (max-width: 991px){
     .about .about-content{
@@ -504,9 +503,8 @@ background-color: white;
 }
 
 .about .about-content .image{
-    position: relative;
-    width: 250px;
-    height: 375px;
+    position: relative; 
+    max-width: 500px;
 }
 
 @media (max-width: 991px){
@@ -514,7 +512,7 @@ background-color: white;
         margin: 0 auto 60px;
     }
 }
-
+/* 
 .about .about-content .image::before{
     content:"";
     position: absolute ;
@@ -537,38 +535,34 @@ background-color: white;
     top: -40px;
     right: -150px;
     z-index: -1;
-}
+} */
 
-@media(max-width: 991px){
+/* @media(max-width: 991px){
     .about .about-content .image::before,
     .about .about-content .image::after{
         display: none;
     }
-}
+} */
 
+ 
 
 .about .about-content .image img{
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto; 
 }
 
 .about .about-content .text{
     flex-basis: calc(100% - 500px);
 }
 
-.about .about-content .text p:first-of-type{
-    font-weight: 500px;
+.about .about-content .text {
+    font-weight: 500;
     line-height: 2;
     margin-bottom: 50px;
-}
-
-.about .about-content .text hr{
-    width: 50%;
-    display: inline-block;
-    border-color: var(--main-color);
-}
-
-.about .about-content .text p:last-of-type{
-    line-height: 2;
+    font-size: 30px;
     color: #777;
 }
 
@@ -577,8 +571,8 @@ background-color: white;
  /* start Contact */
  .contact{
     padding-top: var(--section-padding);
-    /* background-color: var(--section-background); */
-    background-color: white;
+    background-color: var(--section-background);
+  
  }
 
  .contact .info{

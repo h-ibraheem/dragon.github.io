@@ -1,0 +1,181 @@
+/* Start Variables */
+:root {
+    --main-color: #28a7ea;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+    --title-font:'Noto Nastaliq Urdu', serif;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 18px;
+    font-family: 'Markazi Text', serif;
+    background-color: #eee;
+    color: #797979;
+    margin: 20px;
+
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start Components */
+  .special-heading {
+    color: #aacff5;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: 2px 0 0;
+    font-size: 25px;
+    text-align: center;
+    color: #797979;
+  }
+
+  .special-heading + p > span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  @media (max-width: 767px) {
+    .special-heading {
+      font-size: 40px;
+    }
+    .special-heading + p {
+      margin-top: 20px;
+    }
+  }
+ ul{
+  list-style: none;
+ }
+ a{
+  text-decoration: none;
+ }
+ i {
+  color: var(--main-color);
+  
+  padding: .8rem;
+  margin:  0 0.3rem!important;
+ }
+
+ /* End Components */
+
+/* start Resume */
+.resume{
+    display: flex;
+   
+}
+
+.resume .personal-info{
+    width: 300PX;
+    margin: 10px;
+}
+.resume .personal-info .basic-info{
+  background-color: #fff;
+}
+
+.resume .personal-info .basic-info .image{
+    max-width: 300px;
+    height: 300px;
+    
+    
+}
+
+.resume .personal-info .basic-info .image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 250px;
+    padding-top: 20px;
+  }
+
+.resume .personal-info .basic-info .image p{
+    
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.resume .basic-info .info span{
+  font-size: 20px;
+}
+
+/* Start personal-info */
+
+.resume .personal-info .skills{
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.resume .personal-info .skills .title{
+  display: flex;
+  align-items: center;
+
+}
+
+.resume .personal-info .skills .title i{
+  font-size: 16px;
+}
+.resume .personal-info .skills .title h3{
+  font-size: 25px;
+  color: var(--main-color);
+  margin: 0;
+}
+
+.resume .personal-info .skills-body ul{
+  padding-left: 20px;
+}
+
+.resume .personal-info .skills-body li::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  font-weight: 600;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+.resume .personal-info .skills-body li{
+  margin:15px 0;
+  font-size: 20px;
+}
+
+/* End Resume */
+
+
+
