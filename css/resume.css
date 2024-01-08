@@ -101,15 +101,17 @@
 }
 
 .resume .personal-info{
-    width: 300PX;
+    width: 350PX;
     margin: 10px;
 }
 .resume .personal-info .basic-info{
   background-color: #fff;
+  border-radius: 20px;
+  padding-bottom: 30px;
 }
 
 .resume .personal-info .basic-info .image{
-    max-width: 300px;
+    width: 300px;
     height: 300px;
     
     
@@ -141,6 +143,7 @@
   background-color: #fff;
   margin-top: 15px;
   padding: 15px;
+  border-radius: 20px;
 }
 
 .resume .personal-info .skills .title{
@@ -173,8 +176,73 @@
 .resume .personal-info .skills-body li{
   margin:15px 0;
   font-size: 20px;
+
 }
 
+/* start Other Info */
+.resume .other-info{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.resume .other-info .experience h2{
+  margin: 0;
+}
+
+.resume .other-info .experience .job{
+
+}
+
+.resume .other-info .experience .job h5{
+  margin-bottom: 0;
+  font-size: 22px;
+}
+.resume .other-info .experience .job h6{
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.resume .other-info .experience .job h6 i{
+  font-size: 15px;
+  padding: 5px;
+
+}
+
+.resume .other-info .experience .job h6 span{
+  font-size: 18px;
+  padding: 5px;
+
+}
+
+
+
+.resume .other-info .experience .job ul li{
+  margin: 10px 0 ;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+
+
+@media (max-width:676px) {
+  .resume {
+    flex-direction: column;
+  }
+  .resume .personal-info{
+    width: 100%;
+    margin: 0 0 20px 0;
+
+  }
+  .resume .personal-info .basic-info .image{
+    width: 100%;
+  }
+}
 /* End Resume */
 
 
