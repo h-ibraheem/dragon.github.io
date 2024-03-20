@@ -650,3 +650,15 @@ background-color: white;
     color: var(--main-color);
  }
  /* End Footer */
+/* start up-btn */
+.btn-up{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  display: none;
+  
+
+}
+/* end up-btn */
